@@ -1,3 +1,5 @@
+/* Existing styles from your App.css */
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,145 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Navbar Component Styles */
+
+/* Group 7478 */
+.position-navbar {
+  position: absolute;
+  width: 1440px;
+  height: 74px;
+  left: 0px;
+  top: 0px;
+}
+
+/* Rectangle 2136 */
+.navbar-bg {
+  position: absolute;
+  width: 1440px;
+  height: 74px;
+  left: 0px;
+  top: 0px;
+  background: #34C94B; /* Primary 400 */
+}
+
+/* Group 1 */
+.navbar-logo-group {
+  position: absolute;
+  width: 67px;
+  height: 34px;
+  left: 32px;
+  top: 20px;
+}
+
+/* Group 3748 */
+.navbar-logo {
+  position: absolute;
+  width: 67px;
+  height: 34px;
+  left: 32px;
+  top: 20px;
+}
+
+/* Q tify */
+.navbar-title {
+  position: absolute;
+  width: 60px;
+  height: 24px;
+  left: 39px;
+  top: 30px;
+  font-family: 'Avenir Next Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+/* Search Bar */
+.search-bar {
+  position: absolute;
+  width: 568px;
+  height: 48px;
+  left: 436px;
+  top: 13px;
+}
+
+.search-bar-box {
+  box-sizing: border-box;
+  position: absolute;
+  width: 568px;
+  height: 48px;
+  left: 436px;
+  top: 13px;
+  background: #FFFFFF;
+  border: 1px solid #121212;
+  border-radius: 8px;
+}
+
+.search-bar-text {
+  position: absolute;
+  width: 215px;
+  height: 19px;
+  left: 456px;
+  top: 27px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #121212;
+}
+
+/* Search icon */
+.search-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 961px;
+  top: 27px;
+  background: #121212;
+}
+
+/* Call to Action Button */
+.cta-btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 16px;
+  gap: 10px;
+  position: absolute;
+  width: 170px;
+  height: 47px;
+  left: 1238px;
+  top: 13px;
+  background: #121212;
+  border: 1px solid #34C94B;
+  border-radius: 12px;
+}
+
+.cta-btn-label {
+  width: 138px;
+  height: 27px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #34C94B;
+}
+.sectionWrapper{
+  padding: 0px 60px 30px; /*top padding is 0px, right and left paddings are 30px, bottom padding is 60px*/
+  display: flex;
+  flex-direction: column;
+  gap:32px; /*(got it from figma) in CSS, it Set the gap between rows and between columns to 50px, also there are row-gap and column-gap props*/
+
 }
