@@ -6,6 +6,9 @@ import FilterSection from './components/FilterSection/FilterSection';
 import {fetchTopAlbums, fetchNewAlbums, fetchSongs} from './api/api'
 import { useEffect, useState } from 'react';
 import styles from "./App.module.css"
+import Faqs from './components/Faqs/Faqs'; 
+import Footer from './components/Footer/footer.js';
+
 
 function App() {
 
@@ -116,6 +119,8 @@ const generateNewSongs=(index)=>{
       <Section type='album' title='New Albums' data={newAlbumSongs}/>
       <FilterSection  type='song' title='Songs' value={value} filteredData={filteredData} handleChangeIndex={handleChangeIndex}/>
       </div>
+      <Faqs />
+      <Footer />
     </div>
   );
 }

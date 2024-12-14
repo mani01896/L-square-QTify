@@ -4,37 +4,43 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import styles from './Faqs.module.css'; // Make sure to create and use this file for styling
 
 export default function Faqs() {
   return (
-    <div>
+    <div className={styles.faqContainer}>
+      {/* FAQ Header */}
+      <Typography variant="h4" className={styles.faqHeader}>
+        FAQs
+      </Typography>
+
+      {/* Accordion Items */}
       <Accordion style={{ background: "black", color: "white" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Is Qtify free to use</Typography>
+          <Typography>Is Qtify free to use?</Typography>
         </AccordionSummary>
         <AccordionDetails style={{ background: "white", color: "black" }}>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Yes! It is 100% free, and has 0% ads
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion style={{ background: "black", color: "white" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Can we download songs</Typography>
+          <Typography>Can we download songs?</Typography>
         </AccordionSummary>
         <AccordionDetails style={{ background: "white", color: "black" }}>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Sorry, unfortunately we don't provide the service to download any songs
           </Typography>
         </AccordionDetails>
       </Accordion>

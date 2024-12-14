@@ -26,13 +26,3 @@ const CarouselLeft = () => {
 
 export default CarouselLeft
 
-
-/*
-notes:
-
-1. Swiper React provides useSwiper hook to easliy get the Swiper instance in components inside of Swiper, eg: swiper.isBeginning
-   swiper.isBeginning	is a boolean	and it will be true if slider on most "left"/"top" position
-
-2.  The on() method in Swiper.js is used to attach event listeners to Swiper instance events. 
-    It allows you to execute custom code when certain events occur, such as when the slide changes or when the swiper is initialized.
-*/
